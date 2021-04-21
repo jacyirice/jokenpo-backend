@@ -4,7 +4,8 @@
     "description": "ws",
     "main": "app.js",
     "scripts": {
-        "test": "nodemon ./bin/www"
+        "test": "nodemon ./bin/www",
+        "start": "node app"
     },
     "author": "Jacyiricê Silva Oliveira",
     "license": "ISC",
