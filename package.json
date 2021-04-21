@@ -1,0 +1,14 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "ws",
+    "main": "app.js",
+    "scripts": {
+        "test": "nodemon ./bin/www"
+    },
+    "author": "Jacyiricê Silva Oliveira",
+    "license": "ISC",
+    "dependencies": {
+        "ws": "^7.4.2"
+    }
+}
