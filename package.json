@@ -10,6 +10,7 @@
     "author": "Jacyiricê Silva Oliveira",
     "license": "ISC",
     "dependencies": {
-        "ws": "^7.4.2"
+        "ws": "^7.4.2",
+        "express": "^4.17.1"
     }
 }
