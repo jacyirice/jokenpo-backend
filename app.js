@@ -2,11 +2,13 @@ const WebSocket = require('ws')
 const rooms = require("./database/Room.json");
 
 const PORT = process.env.PORT || 3000;
-// const server = express()
-//   .use((req, res) => res.sendFile(INDEX, { root: __dirname }))
-//   .listen(PORT, () => console.log(`Listening on ${PORT}`));
+const INDEX = '/index.html';
 
-const wss = new WebSocket.Server({ port: PORT })
+const server = express()
+    .use((req, res) => res.sendFile(INDEX, { root: __dirname }))
+    .listen(PORT, () => console.log(`Listening on ${PORT}`));
+
+const wss = new WebSocket.Server({ server })
 
 wss.on('connection', ws => {
     ws.on('message', message => {
